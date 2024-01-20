@@ -9,7 +9,7 @@
 }
 
 body {
-  background: var(--color-gray);
+  background: var(--color-white);
 }
 
 section.cmyk-ett {
@@ -26,7 +26,7 @@ section.cmyk-magenta {
   background-color: var(--color-grey);
   color: var(--color-key);
   height: 1500px;
-  margin-top: 150px;
+  margin-top: 0;
 }
 
 section.cmyk-yellow {
@@ -55,7 +55,7 @@ body {
   color: var(--color-black);
 }
 
-header {
+/* header {
   color: var(--color-key);
   text-align: center;
   padding: 20px;
@@ -63,7 +63,7 @@ header {
   top: 0;
   width: 100%;
   z-index: 1000;
-}
+} */
 
 h1 {
   font-family: Arial, Helvetica, sans-serif;
@@ -72,12 +72,12 @@ h1 {
 }
 
 nav {
-  max-width: 800px;
+  max-width: 100%;
   display: flex;
   margin: auto;
   justify-content: center;
   font-size: 14px;
-  position: fixed;
+  /* position: fixed; */
   top: 80px;
   left: 0;
   right: 0;
@@ -101,15 +101,21 @@ nav a {
   text-decoration: none;
   font-weight: 800;
   font-size: 18px;
-  padding: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
   width: 100%;
   text-align: left;
   color: var(--color-black);
-  background-color: var(--color-cyan);
+
+  background-color: var(--color-magenta);
 }
 
 nav a:nth-child(2) {
-  background-color: var(--color-magenta);
+  background-color: var(--color-gray);
+  border: 1px solid;
+  border-color: #000000;
 }
 
 nav a:nth-child(3) {
@@ -119,6 +125,10 @@ nav a:nth-child(3) {
 nav a:nth-child(4) {
   background-color: var(--color-key);
   color: var(--color-white);
+}
+
+nav a:nth-child(5) {
+  background-color: var(--color-cyan);
 }
 
 .product {
@@ -143,6 +153,12 @@ nav a:nth-child(4) {
   transition: background-color 0.3s ease;
   box-shadow: none; /* Remove the box-shadow */
   margin: 0 8px;
+}
+
+#home {
+  background-color: yellow;
+  justify-content: center;
+  
 }
 
 #produktcontainer {
